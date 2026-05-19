@@ -6,21 +6,14 @@ function topbarInjector() {
     navElement.id = "multi-page-nav";
     navElement.className = "show-top-menu smooth-show-hide";
     navElement.innerHTML = `
-        <a class="brand" href="https://control-toolbox.org/"><img alt="home" src="https://control-toolbox.org/assets/img/ct-logo-white.svg"></a>
         <div class="hidden-on-mobile" id="nav-items" style="width: inherit;">
-        <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControl.jl">Documentation</a>
-        <a class="nav-link nav-item" href="https://control-toolbox.org/Tutorials.jl">Tutorials</a>
-        <a class="nav-link nav-item" href="https://control-toolbox.org/applications/">Applications</a>
-        <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControlProblems.jl">Problems</a>
-        <div class="nav-dropdown">
-            <button class="nav-item dropdown-label ">Citing</button>
-            <ul class="nav-dropdown-container">
-            <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControl.jl/stable/#Citing-us">OptimalControl</a>
-            <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControlProblems.jl/stable/#Citing-us">OptimalControlProblems</a>      
-            </ul>
-        </div>
-        <a class="nav-link nav-item" href="https://github.com/control-toolbox">GitHub</a>
-        <a class="nav-link nav-item" href="https://control-toolbox.org/contributors/">Contributors</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/">BifurcationKit</a>
+        <a class="nav-link nav-item" href="https://control-toolbox.org/applications/">MultiParamContinuation</a>
+        <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControlProblems.jl">DDEBifurcationKit</a>
+        <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControlProblems.jl">HclinicBifurcationKit</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/tutorials/tutorials/">Tutorials</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/#Citing-this-work">Citing</a>
+        <a class="nav-link nav-item" href="https://github.com/bifurcationkit">GitHub</a>
         </div>
         <button id="multidoc-toggler">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -220,11 +213,11 @@ window.onload = function() {
     document.head.appendChild(favicon);
 
     /* footer */
-    var footer = document.createElement('footer');
-    footer.className = 'ct-footer';
-    fetch('https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/_includes/footer.html')
-    .then(response => response.text())
-    .then(text => footer.innerHTML = text);
+    // var footer = document.createElement('footer');
+    // footer.className = 'ct-footer';
+    // fetch('https://raw.githubusercontent.com/control-toolbox/control-toolbox.github.io/main/_includes/footer.html')
+    // .then(response => response.text())
+    // .then(text => footer.innerHTML = text);
 
     var docs_main = document.getElementsByClassName("docs-main");
     if (docs_main.length > 0) {
