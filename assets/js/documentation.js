@@ -8,9 +8,9 @@ function topbarInjector() {
     navElement.innerHTML = `
         <div class="hidden-on-mobile" id="nav-items" style="width: inherit;">
         <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/">BifurcationKit</a>
-        <a class="nav-link nav-item" href="https://control-toolbox.org/applications/">MultiParamContinuation</a>
-        <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControlProblems.jl">DDEBifurcationKit</a>
-        <a class="nav-link nav-item" href="https://control-toolbox.org/OptimalControlProblems.jl">HclinicBifurcationKit</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/MultiParamContinuation.jl/stable/">MultiParamContinuation</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/DDEBifurcationKit.jl/stable/">DDEBifurcationKit</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/HclinicBifurcationKit.jl/stable/">HclinicBifurcationKit</a>
         <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/tutorials/tutorials/">Tutorials</a>
         <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/#Citing-this-work">Citing</a>
         <a class="nav-link nav-item" href="https://github.com/bifurcationkit">GitHub</a>
