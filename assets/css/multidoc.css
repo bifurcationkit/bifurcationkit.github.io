@@ -164,16 +164,16 @@ html {
 }
 
 #multi-page-nav a.nav-link {
-    color: #ccc;
+    color: black;
     /*text-transform: uppercase;*/
 }
 
 #multi-page-nav a.nav-link:hover {
-    color: #fff;
+    color: darkgray;
 }
 
 #multi-page-nav a.active.nav-link {
-    color: #fff;
+    color: darkgray;
     font-weight: bold;
 }
 
