@@ -1,0 +1,148 @@
+---
+---
+@import "{{ site.theme }}";
+
+@import "common.css";
+
+/* Sticky footer */
+footer {
+    display: flex !important;
+    justify-content: center;
+    background-color: #007fa2;
+    color: #fff;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    margin-top: 0px;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#documenter {
+    min-height: 100%;
+    margin-bottom: -55px; /* equal to footer height */
+}
+
+#documenter:after {
+    content: "";
+    display: block;
+}
+
+.ct-footer, #documenter:after {
+    height: 55px; 
+}
+
+/*! Logos of partners */
+.markdown-body img#partner {
+    height: 60px;
+}
+
+.partners{
+    text-align: center;
+}
+
+.partners .logo {
+    display: inline-block;
+    margin: 10px;
+}
+
+/*! navigation menu: bonne indentation des tab dans le menu */
+#multi-page-nav .nav-item {
+    padding: 0 0.75rem!important;
+    line-height: var(--navbar-height)!important;
+    width: auto!important;
+}
+
+#multi-page-nav {
+    position: sticky !important;
+    background-color: #007fa2 !important;
+    border-bottom: none !important;
+}
+
+/*! navigation menu: mettre à droite l'icone github */
+div.align-right {
+    text-align: right;
+    width: 100%;
+}
+
+/*! navigation menu: taille minimale du logo ct */
+#multi-page-nav .brand {
+    min-width: 45px!important;
+}
+
+/*! navigation menu: hover des liens du menu */
+a:hover {
+    text-decoration: none;
+}
+
+/*! les images dans le markdown */
+.markdown-body img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #fff;
+}
+
+/*! bonne indentation du code dans le markdown */
+.markdown-body pre code,.markdown-body pre tt {
+    display: contents !important;
+}
+
+/*! marge en bas du body */
+body {
+    /* margin-bottom: 100px!important; */
+    font-family: 'Lato Medium'!important;
+}
+
+/*! propriétés du body du markdown */
+.container {
+    width: 100%;
+    max-width: 1100px!important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+}
+
+/*! Titre de la page */
+h1#ct-title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-family: 'Lato Medium';
+}
+
+/*! Titre de la page: logo */
+img#ct-logo-title {
+    vertical-align: sub;
+    margin-right: 20px;
+    width: 60px;
+}
+
+/*! responsive mobile phone */
+@media screen and (max-width: 450px) {
+
+    .container {
+        max-width:100% !important;
+    }
+
+    h1#ct-title {
+        font-size: 2.5em;
+    }
+
+    img#ct-logo-title {
+        margin-right: 15px;
+        width: 45px
+    }
+
+}
