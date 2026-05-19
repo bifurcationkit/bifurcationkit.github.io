@@ -7,10 +7,10 @@ function topbarInjector() {
     navElement.className = "show-top-menu smooth-show-hide";
     navElement.innerHTML = `
         <div class="hidden-on-mobile" id="nav-items" style="width: inherit;">
-        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/">BifurcationKit</a>
-        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/MultiParamContinuation.jl/stable/">MultiParamContinuation</a>
-        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/DDEBifurcationKit.jl/stable/">DDEBifurcationKit</a>
-        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/HclinicBifurcationKit.jl/stable/">HclinicBifurcationKit</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/">BifurcationKit</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/MultiParamContinuation.jl/">MultiParamContinuation</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/DDEBifurcationKit.jl/">DDEBifurcationKit</a>
+        <a class="nav-link nav-item" href="https://bifurcationkit.github.io/HclinicBifurcationKit.jl/">HclinicBifurcationKit</a>
         <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/tutorials/tutorials/">Tutorials</a>
         <a class="nav-link nav-item" href="https://bifurcationkit.github.io/BifurcationKitDocs.jl/stable/#Citing-this-work">Citing</a>
         <a class="nav-link nav-item" href="https://github.com/bifurcationkit">GitHub</a>
