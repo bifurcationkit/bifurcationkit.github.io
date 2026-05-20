@@ -31,14 +31,14 @@ function topbarInjector() {
         sidebar[0].classList.add("smooth-show-hide");
     }
 
-    // 
+    //
     document
         .getElementById("multidoc-toggler")
         .addEventListener("click", function () {
         document.getElementById("nav-items").classList.toggle("hidden-on-mobile");
         });
 
-    // 
+    //
     document.body.addEventListener("click", function (ev) {
         const thisIsExpanded = ev.target.matches(".nav-expanded > .dropdown-label");
         if (!ev.target.matches(".nav-dropdown-container")) {
@@ -77,7 +77,7 @@ function showTopBar() {
 
 // Function to hide the top bar menu
 function hideTopBar() {
-    
+
     // // update top bar
     // var topbar = document.getElementById("multi-page-nav");
     // if (topbar) {
@@ -91,7 +91,7 @@ function hideTopBar() {
     //     sidebar.classList.remove('show-top-menu');
     //     sidebar.classList.add('hide-top-menu');
     // }
-    
+
 }
 
 // ajoute un event listener sur les touches du clavier
@@ -127,7 +127,7 @@ function addSidebarToggleButton() {
         if (buttonSidebar) {
             buttonSidebar.addEventListener('click', toggleSidebarButton);
         }
-        
+
         var buttonStatus = localStorage.getItem('sidebarButtonStatus');
         if (buttonStatus === 'hide') {
             hideSidebar()
@@ -148,7 +148,7 @@ function toggleSidebarButton() {
         hideSidebar()
         localStorage.setItem('sidebarButtonStatus', 'hide');
     }
-    
+
 }
 
 function hideSidebar() {
@@ -199,17 +199,11 @@ if (
 //
 window.onload = function() {
 
-    /* google analytics */
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-J27VDFHJW2');
-
     /* ct favicon */
     var favicon = document.createElement('link');
     favicon.type = 'image/x-icon';
     favicon.rel = 'icon';
-    favicon.href = 'https://control-toolbox.org/assets/img/ct-logo.svg';
+    favicon.href = 'https://bifurcationkit.github.io/assets/img/logo.svg';
     document.head.appendChild(favicon);
 
     /* footer */
